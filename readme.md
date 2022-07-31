@@ -53,13 +53,16 @@ Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are pos
 
 Thresholds Set
 
-![](Images/HTTP_Request_Size_Alert.PNG)
+![HTTP_Request_Size_Alert](https://user-images.githubusercontent.com/97201701/182004734-f1b02aab-b46b-489c-9720-5902e5aa6cdd.png)
 
-![](Images/Excessive_Http_Alert.PNG)
+![Excessive_Http_Alert](https://user-images.githubusercontent.com/97201701/182004737-b8ebede0-95da-461b-bf14-addd65ba42be.png)
 
-![](Images/CPU_Alert.PNG)
 
-![](Images/GET_Request_Alert.PNG)
+![CPU_Alert](https://user-images.githubusercontent.com/97201701/182004739-226b702e-d763-4096-a175-c7c6a78efa8b.png)
+
+![GET_Request_Alert](https://user-images.githubusercontent.com/97201701/182004741-595841e6-331c-452b-92b2-bb10cc7c3827.png)
+
+
 
 ### Monitoring the Targets
 Traffic to these services should be carefully monitored. To this end, we have implemented the alerts below:
@@ -150,7 +153,8 @@ Nmap scan results for each machine reveal the below services and OS details:
 
 $ nmap -sS -sV -T4 192.168.1.110 
 
-![](Images/target1_nmap_results.PNG)
+![target1_nmap_results](https://user-images.githubusercontent.com/97201701/182004754-416a5bab-7dfd-4bc4-a470-4d1198f50541.png)
+
 
 This scan identifies the services below as potential points of entry:
 
@@ -195,27 +199,32 @@ Exploitation
 Fill out the details below. Include screenshots where possible.
 ### Nmap Scan Results
 
- ![](Images/target1_nmap_results.PNG)
+![target1_nmap_results](https://user-images.githubusercontent.com/97201701/182004757-a282ead8-d9e4-416a-a6fe-9bb3f098dca8.png)
+
 
 ### Wordpress
 
 Accessed mySQL database for RavenSecurity.
 
-![](Images/wordpress_databases.PNG)
+![wordpress_databases](https://user-images.githubusercontent.com/97201701/182004760-65a81840-f130-46e0-8d5a-1483d3a71deb.png)
+
 
 Located username, password and hostname from the database.
 
-![](Images/wordpress_databases_login.PNG)
+![wordpress_databases_login](https://user-images.githubusercontent.com/97201701/182004764-9903779d-4e66-4986-a755-6baf1cbfe25b.png)
+
 
 Found users and their password hashes.
 
-![](Images/wp_database_users.PNG)
+![wp_database_users](https://user-images.githubusercontent.com/97201701/182004769-af73029c-2103-4ea6-8300-e458187dca65.png)
 
 Michael and Steven's hashes were able cracked!
 
-![](Images/cracking_michael.PNG)
+![cracking_michael](https://user-images.githubusercontent.com/97201701/182004772-045d4f34-1dda-4d4e-a3d9-a87dd1ad0bce.png)
 
-![](Images/cracking_steven_pass.jpg)
+
+![cracking_steven_pass](https://user-images.githubusercontent.com/97201701/182004774-f7f4f8d5-9c8f-45a6-9b19-181b301cc8a9.jpg)
+
 
 The Red Team was able to penetrate Target 1 and retrieve the following confidential data:
 
@@ -224,7 +233,8 @@ Target 1
 
 flag1.txt:
 
-![](Images/flag1.PNG)
+![flag1](https://user-images.githubusercontent.com/97201701/182004775-27e8f64e-03e4-436c-83bb-4578f4b44b29.png)
+
 
 
 Exploit Used
@@ -235,9 +245,11 @@ Command: cat service.html | grep flag1
 
 flag2.txt:
 
-![](Images/flag2.PNG)
+![flag2](https://user-images.githubusercontent.com/97201701/182004781-3bcbb56c-1a13-4856-8025-4decb22e2357.png)
 
-![](Images/cat_flag2.PNG)
+
+![cat_flag2](https://user-images.githubusercontent.com/97201701/182004786-65007d2f-b605-4136-a058-92c0f89c4d37.png)
+
 
 
 Exploit Used
@@ -247,7 +259,8 @@ Command: cd /var/www | cat flag2.txt
 
 flag4.txt:
 
-![](Images/flag4.PNG)
+![flag4](https://user-images.githubusercontent.com/97201701/182004790-ae6f3bec-b107-4a47-996a-28bd61516208.png)
+
 
 Exploit Used
 
