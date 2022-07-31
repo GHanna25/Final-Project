@@ -1,7 +1,8 @@
 #Final Project 
 
 Network Toplogy
-![](Images/final-project-setup.png)
+
+![final-project-setup](https://user-images.githubusercontent.com/97201701/182004723-3a535a97-11d3-4435-bcc4-46a7f566a4cc.png)
 
 
 # Blue Team: Summary of Operations
