@@ -101,7 +101,7 @@ Vulnerability Mitigated:
 
 Reliability: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
 
-TODO Note: Explain at least 3 alerts. Add more if time allows.
+ Explain at least 3 alerts. Add more if time allows.
 
 Suggestions for Going Further (Optional)
 TODO:
@@ -126,7 +126,7 @@ Vulnerability 2
 Patch: TODO: E.g., install special-security-package with apt-get
 
 
-Why It Works: TODO: E.g., special-security-package scans the system for viruses every day
+Why It Works: : E.g., special-security-package scans the system for viruses every day
 
 
 
@@ -136,7 +136,7 @@ Vulnerability 3
 Patch: TODO: E.g., install special-security-package with apt-get
 
 
-Why It Works: TODO: E.g., special-security-package scans the system for viruses every day
+Why It Works: : E.g., special-security-package scans the system for viruses every day
 
 # Red Team: Summary of Operations
 
@@ -148,7 +148,7 @@ Exploitation
 
 
 Exposed Services
-TODO: Fill out the information below.
+: Fill out the information below.
 Nmap scan results for each machine reveal the below services and OS details:
 
 $ nmap -sS -sV -T4 192.168.1.110 
